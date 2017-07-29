@@ -13,6 +13,7 @@ import java.util.Stack;
  */
 
 public class ActivityHelper implements Application.ActivityLifecycleCallbacks {
+
     private static Stack<Activity> mActivityStack;
 
     public ActivityHelper() {
@@ -53,7 +54,9 @@ public class ActivityHelper implements Application.ActivityLifecycleCallbacks {
 
     @Override
     public void onActivityDestroyed(Activity activity) {
+
         mActivityStack.remove(activity);
+
     }
 
     public Activity getPreActivity() {
@@ -90,25 +93,9 @@ public class ActivityHelper implements Application.ActivityLifecycleCallbacks {
      *
      * @param activity 删掉的activity
      */
-    public void postRemoveActivity(Activity activity) {
+    void postRemoveActivity(Activity activity) {
         if (mActivityStack != null) {
             mActivityStack.remove(activity);
-        }
-    }
-
-    public void addActivity(Class clz) {
-        if (mActivityStack == null) {
-            return;
-        }
-
-        Activity activity;
-        for (int i = 0; i < mActivityStack.size(); i++) {
-            activity = mActivityStack.get(i);
-            if (activity.getClass().getName().equals(clz.getName())) {
-                mActivityStack.remove(i);
-                mActivityStack.add(activity);
-                return;
-            }
         }
     }
 
