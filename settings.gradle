@@ -1,1 +1,1 @@
-include ':app', ':changeskin', ':slideback', ':greendaogenerator'
+include ':app', ':greendaogenerator', ':slideback'
