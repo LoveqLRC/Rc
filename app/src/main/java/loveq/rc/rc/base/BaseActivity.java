@@ -13,6 +13,7 @@ import android.view.View;
 import loveq.rc.rc.BuildConfig;
 import loveq.rc.rc.annotation.ActivityFragmentInject;
 import loveq.rc.rc.module.settings.ui.SettingsActivity;
+import rc.loveq.changeskin.SkinManager;
 
 /**
  * Author：Rc
@@ -95,7 +96,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         }
 
         if (this instanceof SettingsActivity) {
-//            SkinManager.getInstance().
+            SkinManager.getInstance().register(this);
         }
         initTheme();
     }

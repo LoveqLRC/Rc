@@ -8,17 +8,17 @@ import org.greenrobot.greendao.annotation.Generated;
  * 0n 2017/7/30 11:58
  */
 @Entity
-public class Channel {
+public class NewsChannelTable {
     String newsChannelName;
     String newsChannelId;
     String newsChannelType;
-    String newsChannelSelect;
-    String newsChannelIndex;
-    String newsChannelFixed;
-    @Generated(hash = 104496804)
-    public Channel(String newsChannelName, String newsChannelId,
-            String newsChannelType, String newsChannelSelect,
-            String newsChannelIndex, String newsChannelFixed) {
+    boolean newsChannelSelect;
+    int newsChannelIndex;
+    boolean newsChannelFixed;
+    @Generated(hash = 782834619)
+    public NewsChannelTable(String newsChannelName, String newsChannelId,
+            String newsChannelType, boolean newsChannelSelect, int newsChannelIndex,
+            boolean newsChannelFixed) {
         this.newsChannelName = newsChannelName;
         this.newsChannelId = newsChannelId;
         this.newsChannelType = newsChannelType;
@@ -26,8 +26,8 @@ public class Channel {
         this.newsChannelIndex = newsChannelIndex;
         this.newsChannelFixed = newsChannelFixed;
     }
-    @Generated(hash = 459652974)
-    public Channel() {
+    @Generated(hash = 518806505)
+    public NewsChannelTable() {
     }
     public String getNewsChannelName() {
         return this.newsChannelName;
@@ -47,22 +47,24 @@ public class Channel {
     public void setNewsChannelType(String newsChannelType) {
         this.newsChannelType = newsChannelType;
     }
-    public String getNewsChannelSelect() {
+    public boolean getNewsChannelSelect() {
         return this.newsChannelSelect;
     }
-    public void setNewsChannelSelect(String newsChannelSelect) {
+    public void setNewsChannelSelect(boolean newsChannelSelect) {
         this.newsChannelSelect = newsChannelSelect;
     }
-    public String getNewsChannelIndex() {
+    public int getNewsChannelIndex() {
         return this.newsChannelIndex;
     }
-    public void setNewsChannelIndex(String newsChannelIndex) {
+    public void setNewsChannelIndex(int newsChannelIndex) {
         this.newsChannelIndex = newsChannelIndex;
     }
-    public String getNewsChannelFixed() {
+    public boolean getNewsChannelFixed() {
         return this.newsChannelFixed;
     }
-    public void setNewsChannelFixed(String newsChannelFixed) {
+    public void setNewsChannelFixed(boolean newsChannelFixed) {
         this.newsChannelFixed = newsChannelFixed;
     }
+
+
 }

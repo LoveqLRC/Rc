@@ -10,13 +10,13 @@ import com.socks.library.KLog;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
-
 import org.greenrobot.greendao.query.QueryBuilder;
 
 import loveq.rc.rc.BuildConfig;
 import loveq.rc.rc.common.Constant;
 import loveq.rc.rc.db.gen.DaoMaster;
 import loveq.rc.rc.db.gen.DaoSession;
+import rc.loveq.changeskin.SkinManager;
 
 
 /**
