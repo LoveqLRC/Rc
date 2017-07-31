@@ -1,15 +1,31 @@
 package loveq.rc.rc.module.settings.ui;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.View;
 
-import loveq.rc.rc.R;
+import loveq.rc.rc.base.BaseActivity;
+import loveq.rc.rc.module.settings.presenter.ISettingsPresenter;
+import loveq.rc.rc.module.settings.view.ISettingsView;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends BaseActivity<ISettingsPresenter> implements ISettingsView {
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
+    public void onClick(View view) {
+
+    }
+
+    @Override
+    public void toast(String msg) {
+
+    }
+
+    @Override
+    public void showProgress() {
+
+    }
+
+    @Override
+    public void hideProgress() {
+
     }
 }

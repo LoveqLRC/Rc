@@ -10,8 +10,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.zhy.changeskin.SkinManager;
-
 import loveq.rc.rc.BuildConfig;
 import loveq.rc.rc.annotation.ActivityFragmentInject;
 import loveq.rc.rc.module.settings.ui.SettingsActivity;
@@ -97,7 +95,7 @@ public abstract class BaseActivity<T extends BasePresenter> extends AppCompatAct
         }
 
         if (this instanceof SettingsActivity) {
-            SkinManager.getInstance().register(this);
+//            SkinManager.getInstance().
         }
         initTheme();
     }

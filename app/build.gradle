@@ -28,7 +28,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile rootProject.ext.dependencies["changeskin"]
+    //    compile rootProject.ext.dependencies["changeskin"]
     compile rootProject.ext.dependencies["greendao"]
     compile rootProject.ext.dependencies["greendao-generator"]
     compile rootProject.ext.dependencies["klog"]
@@ -41,4 +41,5 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     debugCompile 'com.amitshekhar.android:debug-db:1.0.1'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    compile project(':changeskin')
 }
